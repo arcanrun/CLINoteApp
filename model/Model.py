@@ -1,4 +1,4 @@
-from model.App.Interfaces.INote import INote
+from model.facade.interfaces.INote import INote
 
 class Model:
     def __init__(self):
@@ -8,7 +8,7 @@ class Model:
         pass
 
     def get_all_notes(self):
-        return [INote()]
+        pass
 
 if __name__ == '__main__':
     model = Model()
