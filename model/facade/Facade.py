@@ -29,3 +29,9 @@ class Facade(IFacade):
     def get_all_notes(self):
         return self.db.get_all_items()
 
+    def delete_note(self, id):
+        self.db.delete_item(id)
+
+    def clear_db(self):
+        self.db.clear_db()
+

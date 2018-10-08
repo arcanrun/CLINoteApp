@@ -3,32 +3,36 @@ import datetime
 from model.facade.Facade import Facade
 from model.facade.subsystem.Note import Note
 from model.facade.subsystem.ShelveDb import ShelveDb
+from unittest.mock import MagicMock
 from model.facade.interfaces.INote import INote
 import pdb
 
+
 class FacadeTest(unittest.TestCase):
     def setUp(self):
-        self.facade = Facade(ShelveDb())
+        db = ShelveDb()
+        self.facade = Facade(db)
 
-    def test_create_note(self):
+    def test_create_note_and_delete_note_by_id(self):
 
         text = 'Hello!'
-        today = datetime.datetime.now()
+        today = datetime.date.today()
         category = 'Fun'
         title = 'HI!'
-
         self.facade.create_note(text, today, category, title)
         res = self.facade.get_note_by_id(0)
 
         self.assertIsInstance(res, Note)
         self.assertEqual(res.get_text(), text, 'Hello!')
-        self.assertEqual(res.get_date(),today, today)
+        self.assertEqual(res.get_date(), today)
         self.assertEqual(res.get_category(), category.lower())
         self.assertEqual(res.get_title(), title)
 
-    def test_note_on_change(self):
+        self.facade.delete_note('0')
+
+    def test_note_on_change_and_clear_db(self):
         text = 'Hello!'
-        today = datetime.datetime.now()
+        today = datetime.date.today()
         category = 'Fun'
         title = 'HI!'
 
@@ -47,9 +51,11 @@ class FacadeTest(unittest.TestCase):
         self.assertEqual(note.get_category(), new_category.lower())
         self.assertEqual(note.get_title(), new_title)
 
-    def test_on_adding_and_getting_items_from_DB(self):
+        self.facade.clear_db()
+
+    def test_on_adding_and_getting_items_from_DB_and_clear_db(self):
         text = 'Hello!'
-        today = datetime.datetime.now()
+        today = datetime.date.today()
         category = 'Fun'
         title = 'HI!'
         self.facade.create_note(text, today, category, title)
@@ -58,21 +64,21 @@ class FacadeTest(unittest.TestCase):
 
         self.assertEqual(note_by_id.get_text(), text)
 
-    def test_get_all_notes(self):
+        self.facade.clear_db()
+
+    def test_get_all_notes_and_clear_db(self):
         text = 'Hello!'
-        today = datetime.datetime.now()
+        today = datetime.date.today()
         category = 'Fun'
         title = 'HI!'
         self.facade.create_note(text, today, category, title)
         self.facade.create_note(text, today, category, title)
 
-        pdb.set_trace()
-
-
-
+        # pdb.set_trace()
 
         self.assertEqual( len( self.facade.get_all_notes() ), 2 )
 
-    def test_clear_all_notes_from_db(self):
-        pass
+        self.facade.clear_db()
+
+    
 

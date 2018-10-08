@@ -26,3 +26,13 @@ class ShelveDb(IDataBase):
         except KeyError:
             return None
 
+    def delete_item(selfm, id):
+        db = shelve.open('shelveDb')
+        db.pop(id)
+        db.close()
+
+    def clear_db(self):
+        db = shelve.open('shelveDb')
+        db.clear()
+        db.close()
+

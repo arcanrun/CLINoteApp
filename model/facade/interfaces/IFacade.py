@@ -29,3 +29,11 @@ class IFacade(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def get_all_notes(self):
         pass
+
+    @abc.abstractmethod
+    def delete_note(self, id):
+        pass
+
+    @abc.abstractmethod
+    def clear_db(self):
+        pass

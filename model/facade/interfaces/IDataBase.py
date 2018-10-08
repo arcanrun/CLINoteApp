@@ -13,3 +13,11 @@ class IDataBase(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def get_item(self, id):
         pass
+
+    @abc.abstractmethod
+    def delete_item(selfm, id):
+        pass
+
+    @abc.abstractmethod
+    def clear_db(self):
+        pass
