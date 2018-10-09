@@ -37,3 +37,16 @@ class IFacade(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def clear_db(self):
         pass
+
+    @abc.abstractmethod
+    def add_notify(self, item, date):
+        pass
+
+    @abc.abstractmethod
+    def check_notification(self):
+        pass
+
+    @abc.abstractmethod
+    def change_note(self, note, id):
+        pass
+

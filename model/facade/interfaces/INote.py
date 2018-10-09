@@ -34,3 +34,11 @@ class INote(metaclass=abc.ABCMeta):
     def set_date(self, date):
         pass
 
+    @abc.abstractmethod
+    def set_notification(self, date):
+        pass
+
+    @abc.abstractmethod
+    def get_notification(self):
+        pass
+

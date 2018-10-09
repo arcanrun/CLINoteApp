@@ -11,8 +11,11 @@ class Facade(IFacade):
     def set_db(self, db):
         self.db = db
 
-    def create_note(self, text, date, category=None, title=None):
-        self.db.add(Note(text, date, category, title))
+    def create_note(self, text, date, category=None, title=None, notify=None):
+        self.db.add(Note(text, date, category, title,))
+
+    def change_note(self, note, id):
+        self.db.change_item(note, id)
 
     def change_text(self, note, new_text):
         note.set_text(new_text)
@@ -34,4 +37,12 @@ class Facade(IFacade):
 
     def clear_db(self):
         self.db.clear_db()
+
+    def add_notify(self, id, date):
+        note = self.get_note_by_id(id)
+        note.set_notification(date)
+        self.change_note(note, id)
+
+    def check_notification(self):
+        self.notifier.notify()
 

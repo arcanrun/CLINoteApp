@@ -21,3 +21,7 @@ class IDataBase(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def clear_db(self):
         pass
+
+    @abc.abstractmethod
+    def change_item(self, item, id):
+        pass

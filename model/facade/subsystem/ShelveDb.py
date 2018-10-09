@@ -12,6 +12,11 @@ class ShelveDb(IDataBase):
             db['0'] = item
         db.close()
 
+    def change_item(self, item, id):
+        db = shelve.open('shelveDb')
+        db[id] = item
+        db.close()
+
     def get_all_items(self):
         # all_data = []
         db = shelve.open('shelveDb')
