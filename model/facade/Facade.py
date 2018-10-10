@@ -46,3 +46,9 @@ class Facade(IFacade):
     def check_notification(self):
         self.notifier.notify()
 
+    def change_status_of_note(self, id, status):
+        note = self.get_note_by_id(id)
+        note.change_status_notification(status)
+        self.change_note(note, id)
+
+

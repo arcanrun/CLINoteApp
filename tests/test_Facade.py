@@ -91,13 +91,28 @@ class FacadeTest(unittest.TestCase):
 
         note.set_notification(datetime.date(2018, 10, 10))
 
-
         self.assertEqual(note.get_notification(), [datetime.date(2018, 10, 10), 0])
+
 
         self.facade.add_notify('0', datetime.date(2000, 1, 1))
         note_changed = self.facade.get_note_by_id('0')
         # pdb.set_trace()
         self.assertEqual(note_changed.get_notification(), [datetime.date(2000, 1, 1), 0])
+
+        self.facade.clear_db()
+
+    def test_on_changeble_status_of_notes(self):
+        text = 'Hello!'
+        today = datetime.date.today()
+        category = 'Fun'
+        title = 'HI!'
+        self.facade.create_note(text, today, category, title)
+        self.facade.add_notify('0', datetime.date(2019, 10, 10))
+        self.facade.change_status_of_note('0','1')
+        changed_status_note = self.facade.get_note_by_id('0')
+        print(changed_status_note.get_notification())
+
+        self.assertEqual(changed_status_note.get_notification()[1], '1')
 
         self.facade.clear_db()
 

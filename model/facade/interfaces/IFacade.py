@@ -50,3 +50,7 @@ class IFacade(metaclass=abc.ABCMeta):
     def change_note(self, note, id):
         pass
 
+    @abc.abstractmethod
+    def change_status_of_note(self,id, status):
+        pass
+

@@ -42,3 +42,9 @@ class Note(INote):
     def get_notification(self):
         return self.notify
 
+    def change_status_notification(self, staus):
+        # 1 done
+        # 0 in progress
+        if not self.notify is None and (int(staus) >= 0 and int(staus) <= 1):
+            self.notify[1] = staus
+

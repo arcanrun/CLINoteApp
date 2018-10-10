@@ -42,3 +42,8 @@ class INote(metaclass=abc.ABCMeta):
     def get_notification(self):
         pass
 
+    @abc.abstractmethod
+    def change_status_notification(self, staus):
+        pass
+
+
