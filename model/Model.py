@@ -41,6 +41,11 @@ class Model(IModel):
     def get_notes_by_category(self, category):
         return self.facade.get_notes_by_category(category)
 
+    def note_notify(self):
+        return self.facade.check_notification()
+
+
+
 
 
 

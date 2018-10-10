@@ -152,3 +152,34 @@ class TestModel(unittest.TestCase):
         self.facade.clear_db()
 
 
+    def test_notificator_on_ubuntu_flash_cards(self):
+        text_1 = 'I, am note!'
+        today_1 = datetime.date(2015, 2, 2)
+        category_1 = 'Fun'
+        title_1 = 'HI!'
+        notify_1 = [datetime.date(2015, 2, 2), 0]
+
+        self.model.create_note(text_1, today_1, title_1, category_1, notify_1)
+
+        text_2 = 'I, am note Of common category!'
+        today_2 = datetime.date.today()
+        category_2 = 'Common'
+        title_2 = 'HI!'
+        notify_2 = [datetime.date(2016, 11, 30), 0]
+
+        self.model.create_note(text_2, today_2, title_2, category_2, notify_2)
+
+        text_3 = 'I, am note of common category too!'
+        today_3 = datetime.date.today()
+        category_3 = 'Common'
+        title_3 = 'HI!'
+        notify_3 = [datetime.date(2016, 11, 30), 0]
+
+        self.model.create_note(text_3, today_3, title_3, category_3, notify_3)
+
+
+        self.model.note_notify()
+
+        self.facade.clear_db()
+
+

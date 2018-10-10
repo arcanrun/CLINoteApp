@@ -20,21 +20,21 @@ class NotifyUbuntu(INotifier):
         self.facade.create_note(text, today, category, title)
         self.facade.add_notify('3', datetime.date(2019, 10, 10))
         print(self.facade.get_note_by_id('3').get_notification())
+
     def notify(self):
-        db = shelve.open('../../../shelveDb')
-
-        for k,v in db.items():
+        db = shelve.open('shelveDb')
+        res = [len(db.items())]
+        for k, v in db.items():
+            res.append(v)
             notification = v.get_notification()
-            print(k,notification)
-
-            if (not notification == None) and (not notification[1] == '1') and (notification[0] <= datetime.date.today()):
+            # print(k, v.get_notification())
+            if (not notification is None) and (not notification[1] == '1') and (notification[0] <= datetime.date.today()):
                 title = v.get_title()
                 category = v.get_category()
                 text = '==' + category + '==\n' + v.get_text()
-
                 subprocess.Popen(['notify-send', '-i', '/home/arcan/PycharmProjects/CLINoteApp/icon.png', title, text])
         db.close()
-        return
+        return res
 
 if __name__ == '__main__':
     a = NotifyUbuntu()
