@@ -2,7 +2,7 @@ import unittest
 import datetime
 from model.facade.Facade import Facade
 from model.facade.subsystem.Note import Note
-from model.facade.subsystem.ShelveDb import ShelveDb
+from model.facade.subsystem.DbTools import DBTools
 from unittest.mock import MagicMock
 from model.facade.interfaces.INote import INote
 import pdb
@@ -10,7 +10,7 @@ import pdb
 
 class FacadeTest(unittest.TestCase):
     def setUp(self):
-        db = ShelveDb()
+        db = DBTools()
         self.facade = Facade(db)
 
     def test_create_note_and_delete_note_by_id(self):

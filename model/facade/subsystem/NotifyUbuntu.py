@@ -1,6 +1,6 @@
 from model.facade.interfaces.INotifier import INotifier
 from model.facade.Facade import Facade
-from model.facade.subsystem.ShelveDb import ShelveDb
+from model.facade.subsystem.DbTools import DBTools
 
 import subprocess
 import shelve
@@ -9,7 +9,7 @@ import datetime
 
 class NotifyUbuntu(INotifier):
     def __init__(self):
-        db = ShelveDb()
+        db = DBTools()
         self.facade = Facade(db)
 
     def create(self):

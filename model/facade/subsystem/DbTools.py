@@ -2,7 +2,7 @@ from model.facade.interfaces.IDataBase import IDataBase
 import shelve
 
 
-class ShelveDb(IDataBase):
+class DBTools(IDataBase):
     def add(self, item):
         db = shelve.open('shelveDb')
         last_id = len(db.keys()) - 1

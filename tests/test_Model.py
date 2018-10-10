@@ -2,13 +2,13 @@ import unittest
 from model.Model import Model
 from model.facade.Facade import Facade
 from model.facade.subsystem.NotifyUbuntu import NotifyUbuntu
-from model.facade.subsystem.ShelveDb import ShelveDb
+from model.facade.subsystem.DbTools import DBTools
 import datetime
 
 
 class TestModel(unittest.TestCase):
     def setUp(self):
-        self.db = ShelveDb()
+        self.db = DBTools()
         self.notifier = NotifyUbuntu()
         self.facade = Facade(self.db, self.notifier)
         self.model = Model(self.facade)
@@ -129,5 +129,26 @@ class TestModel(unittest.TestCase):
 
         self.facade.clear_db()
 
+    def test_on_making_read_note(self):
+        text_1 = 'I, am note!'
+        today_1 = datetime.date(2015, 2, 2)
+        category_1 = 'Fun'
+        title_1 = 'HI!'
+
+        self.model.create_note(text_1, today_1, title_1, category_1)
+        self.model.add_notify('0', datetime.date(2015, 2, 2))
+
+        note = self.model.get_note_by_id('0')
+
+        self.assertEqual(note.get_notification()[1], 0)
+
+
+        self.model.dont_notify('0')
+
+        note_which_ive_done = self.model.get_note_by_id('0')
+
+        self.assertEqual(note_which_ive_done.get_notification()[1], 1)
+
+        self.facade.clear_db()
 
 

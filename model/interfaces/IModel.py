@@ -11,5 +11,5 @@ class IModel(metaclass=abc.ABCMeta):
         pass
 
     @abc.abstractmethod
-    def notify_subscribers(self):
+    def update_subscribers(self):
         pass
