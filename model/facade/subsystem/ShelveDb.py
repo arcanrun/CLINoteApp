@@ -18,11 +18,11 @@ class ShelveDb(IDataBase):
         db.close()
 
     def get_all_items(self):
-        # all_data = []
+        all_data = []
         db = shelve.open('shelveDb')
-        # for k,v in db.items():
-        #     all_data.append([k,v])
-        return db.items()
+        for k,v in db.items():
+            all_data.append([k,v])
+        return all_data
 
     def get_item(self, id):
         db = shelve.open('shelveDb')
@@ -40,4 +40,21 @@ class ShelveDb(IDataBase):
         db = shelve.open('shelveDb')
         db.clear()
         db.close()
+
+    def get_items_by_date(self, date):
+        res = []
+        db = shelve.open('shelveDb')
+        for k, v in db.items():
+            if v.get_date() == date:
+                res.append(v)
+        return res
+
+    def get_items_by_category(self, category):
+        res = []
+        db = shelve.open('shelveDb')
+        for k, v in db.items():
+            if v.get_category() == category:
+                res.append(v)
+        return res
+
 

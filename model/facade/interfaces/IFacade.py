@@ -31,6 +31,14 @@ class IFacade(metaclass=abc.ABCMeta):
         pass
 
     @abc.abstractmethod
+    def get_notes_by_category(self, category):
+        pass
+
+    @abc.abstractmethod
+    def get_notes_by_date(self, date):
+        pass
+
+    @abc.abstractmethod
     def delete_note(self, id):
         pass
 

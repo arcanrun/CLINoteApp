@@ -1,6 +1,6 @@
 from .interfaces.IFacade import IFacade
-from .interfaces.INote import INote
 from .subsystem.Note import Note
+import datetime
 
 
 class Facade(IFacade):
@@ -50,5 +50,15 @@ class Facade(IFacade):
         note = self.get_note_by_id(id)
         note.change_status_notification(status)
         self.change_note(note, id)
+
+    def get_notes_by_category(self, category):
+        return self.db.get_items_by_category(category)
+
+    def get_notes_by_date(self, date):
+        if isinstance(date, datetime.date):
+            return self.db.get_items_by_date(date)
+        else:
+            raise TypeError
+
 
 

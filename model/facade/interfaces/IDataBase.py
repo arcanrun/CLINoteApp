@@ -25,3 +25,11 @@ class IDataBase(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def change_item(self, item, id):
         pass
+
+    @abc.abstractmethod
+    def get_items_by_date(self, date):
+        pass
+
+    @abc.abstractmethod
+    def get_items_by_category(self, category):
+        pass
