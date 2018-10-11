@@ -20,7 +20,7 @@ class TestModel(unittest.TestCase):
         title = 'HI!'
         notify = [datetime.date(2015,10,10), 0]
 
-        self.model.create_note(text, today, title, category, notify)
+        self.model.create_note(text, today, category, title, notify)
         note = self.model.get_note_by_id('0')
 
         self.assertEqual(note.text, text)
@@ -34,7 +34,7 @@ class TestModel(unittest.TestCase):
         title_1 = 'HI!'
         notify_1 = [datetime.date(2015, 10, 10), 0]
 
-        self.model.create_note(text_1, today_1, title_1, category_1, notify_1)
+        self.model.create_note(text_1, today_1, category_1, title_1, notify_1)
 
 
 
@@ -44,7 +44,7 @@ class TestModel(unittest.TestCase):
         title_2 = 'HI!'
         notify_2 = [datetime.date(2015, 10, 10), 0]
 
-        self.model.create_note(text_2, today_2, title_2, category_2, notify_2)
+        self.model.create_note(text_2, today_2,  category_2, title_2, notify_2)
 
 
         all_notes = self.model.get_all_notes()
@@ -61,7 +61,7 @@ class TestModel(unittest.TestCase):
         title_1 = 'HI!'
         notify_1 = [datetime.date(2015, 10, 10), 0]
 
-        self.model.create_note(text_1, today_1, title_1, category_1, notify_1)
+        self.model.create_note(text_1, today_1, category_1, title_1, notify_1)
 
         text_2 = 'I, am note Of common category!'
         today_2 = datetime.date.today()
@@ -69,7 +69,7 @@ class TestModel(unittest.TestCase):
         title_2 = 'HI!'
         notify_2 = [datetime.date(2013, 2, 10), 0]
 
-        self.model.create_note(text_2, today_2, title_2, category_2, notify_2)
+        self.model.create_note(text_2, today_2, category_2, title_2, notify_2)
 
         text_3 = 'I, am note of common category too!'
         today_3 = datetime.date.today()
@@ -77,7 +77,7 @@ class TestModel(unittest.TestCase):
         title_3 = 'HI!'
         notify_3 = [datetime.date(2016, 10, 10), 0]
 
-        self.model.create_note(text_3, today_3, title_3, category_3, notify_3)
+        self.model.create_note(text_3, today_3, category_3, title_3, notify_3)
 
         common_category = self.model.get_notes_by_category('common')
 
@@ -97,7 +97,7 @@ class TestModel(unittest.TestCase):
         title_1 = 'HI!'
         notify_1 = [datetime.date(2015, 2, 2), 0]
 
-        self.model.create_note(text_1, today_1, title_1, category_1, notify_1)
+        self.model.create_note(text_1, today_1, category_1, title_1, notify_1)
 
         text_2 = 'I, am note Of common category!'
         today_2 = datetime.date.today()
@@ -105,7 +105,7 @@ class TestModel(unittest.TestCase):
         title_2 = 'HI!'
         notify_2 = [datetime.date(2016, 11, 30), 0]
 
-        self.model.create_note(text_2, today_2, title_2, category_2, notify_2)
+        self.model.create_note(text_2, today_2, category_2, title_2, notify_2)
 
         text_3 = 'I, am note of common category too!'
         today_3 = datetime.date.today()
@@ -113,7 +113,7 @@ class TestModel(unittest.TestCase):
         title_3 = 'HI!'
         notify_3 = [datetime.date(2016, 11, 30), 0]
 
-        self.model.create_note(text_3, today_3, title_3, category_3, notify_3)
+        self.model.create_note(text_3, today_3, category_3, title_3, notify_3)
 
 
 
@@ -152,14 +152,14 @@ class TestModel(unittest.TestCase):
         self.facade.clear_db()
 
 
-    def test_notificator_on_ubuntu_flash_cards(self):
+    def notificator_on_ubuntu_flash_cards(self):
         text_1 = 'I, am note!'
         today_1 = datetime.date(2015, 2, 2)
         category_1 = 'Fun'
         title_1 = 'HI!'
         notify_1 = [datetime.date(2015, 2, 2), 0]
 
-        self.model.create_note(text_1, today_1, title_1, category_1, notify_1)
+        self.model.create_note(text_1, today_1,  category_1, title_1, notify_1)
 
         text_2 = 'I, am note Of common category!'
         today_2 = datetime.date.today()
@@ -167,7 +167,7 @@ class TestModel(unittest.TestCase):
         title_2 = 'HI!'
         notify_2 = [datetime.date(2016, 11, 30), 0]
 
-        self.model.create_note(text_2, today_2, title_2, category_2, notify_2)
+        self.model.create_note(text_2, today_2, category_2, title_2, notify_2)
 
         text_3 = 'I, am note of common category too!'
         today_3 = datetime.date.today()
@@ -175,7 +175,7 @@ class TestModel(unittest.TestCase):
         title_3 = 'HI!'
         notify_3 = [datetime.date(2016, 11, 30), 0]
 
-        self.model.create_note(text_3, today_3, title_3, category_3, notify_3)
+        self.model.create_note(text_3, today_3,  category_3, title_3, notify_3)
 
 
         self.model.note_notify()

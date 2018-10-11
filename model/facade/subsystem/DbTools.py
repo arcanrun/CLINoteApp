@@ -33,7 +33,7 @@ class DBTools(IDataBase):
 
     def delete_item(selfm, id):
         db = shelve.open('shelveDb')
-        db.pop(id)
+        db.pop(str(id))
         db.close()
 
     def clear_db(self):
