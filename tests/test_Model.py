@@ -81,12 +81,12 @@ class TestModel(unittest.TestCase):
 
         common_category = self.model.get_notes_by_category('common')
 
-        self.assertEqual(common_category[0].get_text(), text_2)
-        self.assertEqual(common_category[1].get_text(), text_3)
+        self.assertEqual(common_category[0][1].get_text(), text_2)
+        self.assertEqual(common_category[1][1].get_text(), text_3)
 
         fun_category = self.model.facade.get_notes_by_category('fun')
 
-        self.assertEqual(fun_category[0].get_text(), text_1)
+        self.assertEqual(fun_category[0][1].get_text(), text_1)
 
         self.facade.clear_db()
 
@@ -119,13 +119,13 @@ class TestModel(unittest.TestCase):
 
         notes_by_date_1 = self.model.get_notes_by_date(datetime.date(2015, 2, 2))
 
-        self.assertEqual(notes_by_date_1[0].get_text(),text_1)
+        self.assertEqual(notes_by_date_1[0][1].get_text(),text_1)
 
 
         notes_by_date_today = self.model.get_notes_by_date(datetime.date.today())
 
-        self.assertEqual(notes_by_date_today[0].get_text(), text_2)
-        self.assertEqual(notes_by_date_today[1].get_text(), text_3)
+        self.assertEqual(notes_by_date_today[0][1].get_text(), text_2)
+        self.assertEqual(notes_by_date_today[1][1].get_text(), text_3)
 
         self.facade.clear_db()
 

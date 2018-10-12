@@ -46,7 +46,7 @@ class DBTools(IDataBase):
         db = shelve.open('shelveDb')
         for k, v in db.items():
             if v.get_date() == date:
-                res.append(v)
+                res.append([k,v])
         return res
 
     def get_items_by_category(self, category):
@@ -54,7 +54,7 @@ class DBTools(IDataBase):
         db = shelve.open('shelveDb')
         for k, v in db.items():
             if v.get_category() == category:
-                res.append(v)
+                res.append([k,v])
         return res
 
 

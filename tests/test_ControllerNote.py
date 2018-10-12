@@ -67,3 +67,5 @@ class ControllerNoteTest(unittest.TestCase):
 
         self.controller.delete_all_notes()
 
+
+

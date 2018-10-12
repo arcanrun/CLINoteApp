@@ -21,3 +21,4 @@ class IControllerInterface(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def delete_all_notes(self):
         pass
+
