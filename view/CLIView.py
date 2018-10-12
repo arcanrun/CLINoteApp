@@ -117,10 +117,11 @@ class CLIView(IObserver):
         print('== WHICH ONE DO YOU WANT TO DELETE? ==')
 
         self.get_all_notes()
+        print('ENTER ID NOTE:')
         id = input()
         self.controller.delete_note(id)
 
-        print('ENTER ID NOTE:')
+
 
     def delte_all_notes(self):
         print("DO YOU REALLY WANT TO DELETE ALL YOUR NOTES? [y/n]")
