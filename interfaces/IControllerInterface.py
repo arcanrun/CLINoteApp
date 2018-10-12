@@ -19,7 +19,15 @@ class IControllerInterface(metaclass=abc.ABCMeta):
         pass
 
     @abc.abstractmethod
-    def change_note(self):
+    def change_title_note(self, id, title):
+        pass
+
+    @abc.abstractmethod
+    def change_text_note(self, id, text):
+        pass
+
+    @abc.abstractmethod
+    def change_category_note(self, id, category):
         pass
 
     @abc.abstractmethod

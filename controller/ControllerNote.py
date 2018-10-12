@@ -14,8 +14,14 @@ class ControllerNote(IControllerInterface):
     def remove_notification(self, id):
         self.model.dont_notify(id)
 
-    def change_note(self):
-        pass
+    def change_title_note(self, id, new_title):
+        self.model.change_title_note(id, new_title)
+
+    def change_text_note(self, id, new_text):
+        self.model.change_text_note(id, new_text)
+
+    def change_category_note(self, id, new_category):
+        self.model.change_category_note(id, new_category)
 
     def delete_note(self, id):
         self.model.delete_note(id)

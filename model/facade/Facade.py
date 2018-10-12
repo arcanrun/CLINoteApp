@@ -17,14 +17,20 @@ class Facade(IFacade):
     def change_note(self, note, id):
         self.db.change_item(note, id)
 
-    def change_text(self, note, new_text):
+    def change_text(self, id, new_text):
+        note = self.get_note_by_id(id)
         note.set_text(new_text)
+        self.change_note(note, id)
 
-    def change_category(self, note, new_category):
+    def change_category(self, id, new_category):
+        note = self.get_note_by_id(id)
         note.set_category(new_category)
+        self.change_note(note, id)
 
-    def change_title(self, note, new_title):
+    def change_title(self, id, new_title):
+        note = self.get_note_by_id(id)
         note.set_title(new_title)
+        self.change_note(note, id)
 
     def get_note_by_id(self, id):
         return self.db.get_item(id)

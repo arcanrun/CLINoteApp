@@ -43,9 +43,11 @@ class FacadeTest(unittest.TestCase):
         new_category = 'Buisness'
         new_title = 'Bye!'
 
-        self.facade.change_text(note, new_text)
-        self.facade.change_category(note, new_category.lower())
-        self.facade.change_title(note, new_title)
+        self.facade.change_text('0', new_text)
+        self.facade.change_category('0', new_category.lower())
+        self.facade.change_title('0', new_title)
+
+        note = self.facade.get_note_by_id(0)
 
         self.assertEqual(note.get_text(), new_text)
         self.assertEqual(note.get_category(), new_category.lower())

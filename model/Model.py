@@ -52,6 +52,18 @@ class Model(IModel):
         self.facade.delete_note(id)
         self.update_subscribers()
 
+    def change_title_note(self, id, new_title):
+        self.facade.change_title(id, new_title)
+        self.update_subscribers()
+
+    def change_text_note(self, id, new_text):
+        self.facade.change_text(id, new_text)
+        self.update_subscribers()
+
+    def change_category_note(self, id, new_category):
+        self.facade.change_category(id, new_category)
+        self.update_subscribers()
+
 
 
 

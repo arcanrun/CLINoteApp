@@ -65,11 +65,12 @@ class CLIView(IObserver):
     def change_note(self):
         print(
             """
-1. Change title of note
-2. Change text of note
-3. Remind me
-4. Don't remind me anymore
-5. Back to main menu
+1. Change title of a note
+2. Change text of a note
+3. Change category of a note
+4. Remind me
+5. Don't remind me anymore
+6. Back to main menu
 
             """
         )
@@ -77,17 +78,39 @@ class CLIView(IObserver):
         dict = {
             '1': self.change_title_note,
             '2': self.change_text_note,
-            '3': self.remind_me,
-            '4': self.dont_remind_me,
-            '5': self.main_menu
+            '3': self.change_category_note,
+            '4': self.remind_me,
+            '5': self.dont_remind_me,
+            '6': self.main_menu
         }
         dict.get(n, self.main_menu)()
 
     # controlls methods:
     def change_title_note(self):
+        self.get_all_notes()
+        print('ENTER ID')
+        id = input()
+        print('ENTER NEW TITLE')
+        n = input()
+        self.controller.change_title_note(id, n)
         self.main_menu()
 
     def change_text_note(self):
+        self.get_all_notes()
+        print('ENTER ID')
+        id = input()
+        print('ENTER NEW TEXT')
+        n = input()
+        self.controller.change_text_note(id, n)
+        self.main_menu()
+
+    def change_category_note(self):
+        self.get_all_notes()
+        print('ENTER ID')
+        id = input()
+        print('ENTER NEW CATEGORY')
+        n = input()
+        self.controller.change_category_note(id, n)
         self.main_menu()
 
     def dont_remind_me(self):
