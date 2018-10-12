@@ -7,7 +7,11 @@ class IControllerInterface(metaclass=abc.ABCMeta):
         pass
 
     @abc.abstractmethod
-    def set_notification(self):
+    def set_notification(self, id, date):
+        pass
+
+    @abc.abstractmethod
+    def remove_notification(self, id):
         pass
 
     @abc.abstractmethod

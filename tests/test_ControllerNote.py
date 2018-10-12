@@ -67,5 +67,29 @@ class ControllerNoteTest(unittest.TestCase):
 
         self.controller.delete_all_notes()
 
+    def test_controller_seting_notification(self):
+        text = 'I, am note!'
+        today = datetime.date(2015, 2, 2)
+        category = 'Fun'
+        title = 'HI!'
+
+        self.controller.create_note(text, today, category, title)
+        note = self.model.get_note_by_id('0')
+        self.assertEqual(note.get_text(), text)
+        self.assertEqual(note.get_notification(), None)
+
+        self.controller.set_notification('0', datetime.date(2018, 10, 10))
+        note1 = self.model.get_note_by_id('0')
+
+        self.assertEqual(note1.get_notification(), [datetime.date(2018, 10, 10), 0])
+
+        self.controller.set_notification('0', datetime.date(2000, 1, 1))
+        note2 = self.model.get_note_by_id('0')
+
+        self.assertEqual(note2.get_notification(), [datetime.date(2000, 1, 1), 0])
+
+        self.controller.delete_all_notes()
+
+
 
 

@@ -25,6 +25,8 @@ if __name__ == '__main__':
     controller = ControllerNote(model)
     view = CLIView(model, controller)
 
+
+    view.flash_notify()
     app(view)
 
 

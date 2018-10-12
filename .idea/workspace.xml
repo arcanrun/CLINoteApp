@@ -6,10 +6,9 @@
       <change beforePath="$PROJECT_DIR$/controller/ControllerNote.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ControllerNote.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interfaces/IControllerInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/IControllerInterface.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/facade/subsystem/DbTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/facade/subsystem/DbTools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shelveDb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_ControllerNote.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ControllerNote.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/CLIView.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/CLIView.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,25 +30,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ShelveDb" value="2" />
-          <entry key="py" value="27" />
+          <entry key="py" value="30" />
           <entry key="shelveDb" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="27" />
+          <entry key="Python" value="30" />
           <entry key="XHTML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3470" />
+          <entry key="py" value="5053" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3470" />
+          <entry key="Python" value="5053" />
         </counts>
       </usages-collector>
     </session>
@@ -59,55 +58,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/CLIView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+            <state relative-caret-position="1364">
+              <caret line="253" column="24" lean-forward="true" selection-start-line="253" selection-start-column="24" selection-end-line="253" selection-end-column="24" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
-                <marker date="1539338226121" expanded="true" signature="736:1129" ph="..." />
-                <marker date="1539338226121" expanded="true" signature="2265:2399" ph="..." />
-                <marker date="1539338226121" expanded="true" signature="2430:2679" ph="..." />
-                <marker date="1539338226121" expanded="true" signature="2706:2715" ph="..." />
-                <marker date="1539338226121" expanded="true" signature="4108:4114" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="1367:1808" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="1944:1950" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="1975:2253" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="2273:2590" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="2988:3065" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="3582:3588" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="3801:3935" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="3966:4215" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="4242:4251" ph="..." />
+                <marker date="1539342732617" expanded="true" signature="6112:6152" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Model.py">
+        <entry file="file://$PROJECT_DIR$/tests/test_Facade.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/facade/Facade.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/facade/subsystem/DbTools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_Model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="904">
+              <caret line="116" column="3" selection-start-line="116" selection-start-column="3" selection-end-line="116" selection-end-column="3" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -116,12 +90,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/facade/Facade.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/facade/subsystem/NotifyUbuntu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/facade/subsystem/Note.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="524">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <marker date="1539331856295" expanded="true" signature="450:487" ph="..." />
+                <element signature="e#0#32#0" expanded="true" />
+                <marker date="1539342812079" expanded="true" signature="450:487" ph="..." />
               </folding>
             </state>
           </provider>
@@ -130,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_ControllerNote.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="224">
+              <caret line="76" column="8" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -142,8 +153,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/ControllerNote.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="280">
+              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+              <folding>
+                <marker date="1539341390931" expanded="true" signature="431:472" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,8 +165,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interfaces/IControllerInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="19" />
+            <state relative-caret-position="280">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="12" />
+              <folding>
+                <marker date="1539341390894" expanded="true" signature="309:328" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,6 +183,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>change</find>
+      <find>sta</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -176,16 +199,17 @@
         <option value="$PROJECT_DIR$/Model/App/__init__.py" />
         <option value="$PROJECT_DIR$/Model/Model.py" />
         <option value="$PROJECT_DIR$/model/Interfaces/INote.py" />
-        <option value="$PROJECT_DIR$/model/Model.py" />
         <option value="$PROJECT_DIR$/tests/test_Facade.py" />
         <option value="$PROJECT_DIR$/model/facade/subsystem/NotifyUbuntu.py" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/model/facade/subsystem/DbTools.py" />
+        <option value="$PROJECT_DIR$/tests/test_Model.py" />
+        <option value="$PROJECT_DIR$/model/Model.py" />
         <option value="$PROJECT_DIR$/tests/test_ControllerNote.py" />
         <option value="$PROJECT_DIR$/interfaces/IControllerInterface.py" />
         <option value="$PROJECT_DIR$/controller/ControllerNote.py" />
-        <option value="$PROJECT_DIR$/model/facade/subsystem/DbTools.py" />
-        <option value="$PROJECT_DIR$/tests/test_Model.py" />
+        <option value="$PROJECT_DIR$/model/facade/subsystem/Note.py" />
         <option value="$PROJECT_DIR$/view/CLIView.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -207,39 +231,6 @@
             <path>
               <item name="CLINoteApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="CLINoteApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CLINoteApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CLINoteApp" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CLINoteApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CLINoteApp" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CLINoteApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CLINoteApp" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CLINoteApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CLINoteApp" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="facade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CLINoteApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CLINoteApp" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="facade" type="462c0819:PsiDirectoryNode" />
-              <item name="subsystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CLINoteApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CLINoteApp" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CLINoteApp" type="b2602c69:ProjectViewProjectNode" />
@@ -362,7 +353,7 @@
     <frame x="46" y="-11" width="1555" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49941656" visible="true" weight="0.20196079" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49941656" visible="true" weight="0.1875817" />
       <window_info id="Structure" order="1" sideWeight="0.5005834" side_tool="true" weight="0.26792663" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,25 +371,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49941656" visible="true" weight="0.20196079" />
-      <window_info id="Structure" order="1" sideWeight="0.5005834" side_tool="true" weight="0.26792663" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.09155646" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -429,36 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/facade/subsystem/Note.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/facade/subsystem/NotifyUbuntu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_Facade.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shelveDb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -466,58 +408,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_ControllerNote.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/IControllerInterface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <marker date="1539331856295" expanded="true" signature="450:487" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerNote.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/facade/Facade.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/facade/subsystem/DbTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        <state relative-caret-position="184">
+          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
@@ -526,25 +420,109 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="1140">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_ControllerNote.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="76" column="8" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/IControllerInterface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <marker date="1539341390894" expanded="true" signature="309:328" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ControllerNote.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <marker date="1539341390931" expanded="true" signature="431:472" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/facade/subsystem/Note.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_Facade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="904">
+          <caret line="116" column="3" selection-start-line="116" selection-start-column="3" selection-end-line="116" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/facade/Facade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/facade/subsystem/NotifyUbuntu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1539342812079" expanded="true" signature="450:487" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/CLIView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+        <state relative-caret-position="1364">
+          <caret line="253" column="24" lean-forward="true" selection-start-line="253" selection-start-column="24" selection-end-line="253" selection-end-column="24" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <marker date="1539338226121" expanded="true" signature="736:1129" ph="..." />
-            <marker date="1539338226121" expanded="true" signature="2265:2399" ph="..." />
-            <marker date="1539338226121" expanded="true" signature="2430:2679" ph="..." />
-            <marker date="1539338226121" expanded="true" signature="2706:2715" ph="..." />
-            <marker date="1539338226121" expanded="true" signature="4108:4114" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="1367:1808" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="1944:1950" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="1975:2253" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="2273:2590" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="2988:3065" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="3582:3588" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="3801:3935" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="3966:4215" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="4242:4251" ph="..." />
+            <marker date="1539342732617" expanded="true" signature="6112:6152" ph="..." />
           </folding>
         </state>
       </provider>

@@ -18,7 +18,7 @@ class Model(IModel):
 
     def create_note(self, text, today, category=None, title=None, notify=None):
         self.facade.create_note(text, today, category, title, notify)
-        self.update_subscribers() # notify about creation note
+        self.update_subscribers()  # notify about creation note
 
     def add_notify(self, id, date):
         self.facade.add_notify(id, date)
@@ -26,7 +26,7 @@ class Model(IModel):
 
     def dont_notify(self, id):
         self.facade.change_status_of_note(id, 1)
-        self.update_subscribers() # notify that you have done this task
+        self.update_subscribers()  # notify that you have done this task
 
     def get_note_by_id(self, id):
         note = self.facade.get_note_by_id(id)
